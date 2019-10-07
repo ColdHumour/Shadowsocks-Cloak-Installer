@@ -53,6 +53,9 @@ if [[ "$EUID" -ne 0 ]]; then #Check root
 	echo "Please run this script as root"
 	exit 1
 fi
+
+apt-get install jq
+
 distro=$(awk -F= '/^NAME/{print $2}' /etc/os-release)
 if [ -d "/etc/shadowsocks-libev" ]; then
 	echo "Looks like you have installed shadowsocks. Choose an option below:"
