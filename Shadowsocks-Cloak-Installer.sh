@@ -512,8 +512,8 @@ echo "{
 	\"ServerName\":\"$ckwebaddr\",
 	\"TicketTimeHint\":3600,
 	\"NumConn\":4,
-	\"EncryptionMethod\": "plain",
-	\"BrowserSig":"chrome"
+	\"EncryptionMethod\": \"plain\",
+	\"BrowserSig\":\"chrome\"
 }" >>/etc/shadowsocks-libev/ckclient.json
 touch /etc/shadowsocks-libev/usersForScript.txt
 chmod 777 /etc/shadowsocks-libev
